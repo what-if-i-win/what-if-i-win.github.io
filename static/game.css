@@ -6,9 +6,14 @@
 body {
   margin: 0;
   padding: 0;
-  background: #E8E6E5;
+  background: #ffffff;
   font-size: 20px;
   color: #3E3E3E;
+}
+@media  only screen and (min-width: 601px) {
+  body {
+    background: #E8E6E5;
+  }
 }
 .container {
   background: #ffffff;
@@ -16,6 +21,7 @@ body {
   margin: 0 auto;
   max-width: 601px;
   min-width: 320px;
+  height: 100%;
 }
 @media  only screen and (min-width: 601px) {
   .container {
@@ -28,7 +34,6 @@ header {
   overflow: hidden;
   height: 50px;
   background: #E8E6E5;
-  border-bottom: 1px solid #BABABA;
 }
 header h1 {
   font-size: 20px;
@@ -44,23 +49,23 @@ header h1 {
 .tile {
   text-align: center;
 }
-.tile.rock:after {
-  content: "✊";
+.tile i.fa {
+  display: none;
 }
-.tile.scissors:after {
-  content: "✋";
+.tile.rock i.fa-hand-rock-o {
+  display: block;
 }
-.tile.paper:after {
-  content: "✌";
+.tile.scissors i.fa-hand-peace-o {
+  display: block;
 }
-.tile.current {
-  font-size: 120px;
+.tile.paper i.fa-hand-paper-o {
+  display: block;
 }
-#current {
-  height: 200px;
-  line-height: 200px;
+#current i {
+  font-size: 160px;
   width: 100%;
-  vertical-align: middle;
+  height: 240px;
+  line-height: 240px;
 }
 #results {
   display: block;
@@ -69,15 +74,20 @@ header h1 {
   padding: 0;
 }
 #results li.tile {
-  font-size: 30px;
   list-style: none;
-  width: 17%;
-  max-width: 80px;
-  height: 50px;
-  line-height: 50px;
   margin: 0;
   padding: 0;
   display: inline-block;
+  width: 17%;
+  max-width: 80px;
+  overflow: hidden;
+  height: 50px;
+}
+#results li.tile i {
+  font-size: 30px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
 }
 #results li.tile.active {
   background: #E8E6E5;
@@ -96,13 +106,17 @@ button:hover {
   cursor: pointer;
   background: #e0e0e0;
 }
-button i {
-  font-size: 40px;
+button i.fa {
+  font-size: 25px;
+  line-height: 40px;
   display: block;
   font-style: normal;
 }
 #action {
   overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 35px;
   background: #E8E6E5;
   width: 100%;
   border: 1px solid #BABABA;
@@ -110,6 +124,12 @@ button i {
   border-right: none;
   margin: 40px 0 0 0;
   text-align: right;
+}
+@media  only screen and (min-width: 601px) {
+  #action {
+    position: relative;
+    padding-bottom: 0px;
+  }
 }
 #action #refresh {
   float: left;

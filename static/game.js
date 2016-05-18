@@ -1,7 +1,17 @@
 var items = ['rock', 'paper', 'scissors'];
 var RESULTS = [];
 var CURRENT = localStorage.getItem("current") !== null ? localStorage.getItem("current") : 0;
+var ICONS = $('<i class="fa fa-hand-peace-o" aria-hidden="true"></i>' +
+    '<i class="fa fa-hand-rock-o" aria-hidden="true"></i>' +
+    '<i class="fa fa-hand-paper-o" aria-hidden="true"></i>');
 console.log(CURRENT);
+
+(function init() {
+    $('.tile').each(function () {
+        $(this).append(ICONS.clone());
+    })
+})();
+
 
 function clearClass(selector) {
     for (var idx in items) {
