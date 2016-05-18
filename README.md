@@ -1,7 +1,7 @@
 이기면 어쪄지?(What If I Win?)
 ===============================
 
-[http://wiiw.github.io](http://wiiw.github.io)
+[http://wiiw.github.io](http://what-if-i-win.github.io/)
 
 가위/바위/보!
 
