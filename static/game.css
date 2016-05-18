@@ -1,0 +1,116 @@
+/* MIXINS */
+/* As hex codes */
+/* Main Primary color */
+/* As RGBa codes */
+/* Main Primary color */
+body {
+  margin: 0;
+  padding: 0;
+  background: #E8E6E5;
+  font-size: 20px;
+  color: #3E3E3E;
+}
+.container {
+  background: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  max-width: 601px;
+  min-width: 320px;
+}
+@media  only screen and (min-width: 601px) {
+  .container {
+    border: 1px solid #BABABA;
+    margin-top: 40px;
+    border-bottom: none;
+  }
+}
+header {
+  overflow: hidden;
+  height: 50px;
+  background: #E8E6E5;
+  border-bottom: 1px solid #BABABA;
+}
+header h1 {
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+}
+#canvas {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.tile {
+  text-align: center;
+}
+.tile.rock:after {
+  content: "✊";
+}
+.tile.scissors:after {
+  content: "✋";
+}
+.tile.paper:after {
+  content: "✌";
+}
+.tile.current {
+  font-size: 120px;
+}
+#current {
+  height: 200px;
+  line-height: 200px;
+  width: 100%;
+  vertical-align: middle;
+}
+#results {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+#results li.tile {
+  font-size: 30px;
+  list-style: none;
+  width: 17%;
+  max-width: 80px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+#results li.tile.active {
+  background: #E8E6E5;
+}
+button {
+  border: none;
+  padding: 10px 0;
+  margin: 0;
+  background: transparent;
+  color: #6E6E6E;
+  font-size: 15px;
+  width: 25%;
+  max-width: 80px;
+}
+button:hover {
+  cursor: pointer;
+  background: #e0e0e0;
+}
+button i {
+  font-size: 40px;
+  display: block;
+  font-style: normal;
+}
+#action {
+  overflow: hidden;
+  background: #E8E6E5;
+  width: 100%;
+  border: 1px solid #BABABA;
+  border-left: none;
+  border-right: none;
+  margin: 40px 0 0 0;
+  text-align: right;
+}
+#action #refresh {
+  float: left;
+}
