@@ -40,13 +40,15 @@ function refreshList() {
         var rand = items[Math.floor(Math.random() * items.length)];
         RESULTS.push(rand);
     }
-    localStorage.setItem("current", 0);
     CURRENT = 0;
-    console.log(RESULTS);
-
     updateList();
     updateCurrent();
 }
+
+$('li.tile').click(function () {
+    CURRENT = $(this).index();
+    updateCurrent();
+});
 
 $('#next').click(function () {
     CURRENT++;
