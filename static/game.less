@@ -6,7 +6,7 @@
 @color-primary-1: #E8E6E5;
 @color-primary-2: #BABABA;
 @color-primary-3: #6E6E6E;
-@color-primary-4: #3E3E3E;
+@color-primary-4: #0a892b;
 
 /* As RGBa codes */
 @rgba-primary-0: rgba(149, 149, 149, 1); /* Main Primary color */
@@ -34,23 +34,10 @@ body {
   min-width: 320px;
   height: 100%;
   @media @ms-m {
-    border: 1px solid @color-primary-2;
+    //border: 1px solid @color-primary-2;
     margin-top: 40px;
     border-bottom: none;
   }
-}
-
-header {
-  overflow: hidden;
-  height: 50px;
-  background: @color-primary-1;
-  h1 {
-    font-size: 20px;
-    text-align: center;
-    padding: 15px 0;
-    margin: 0;
-  }
-  //border-bottom: 1px solid @color-primary-2;
 }
 
 #canvas {
@@ -121,7 +108,7 @@ button {
   padding: 10px 0;
   margin: 0;
   background: transparent;
-  color: @color-primary-3;
+  color: #ffffff;
   font-size: 15px;
   width: 25%;
   max-width: 80px;
@@ -130,12 +117,25 @@ button {
     background: lighten(@color-primary-2, 15);
   }
   i.fa {
+
     font-size: 25px;
     line-height: 40px;
     display: block;
     font-style: normal;
   }
 
+}
+
+header {
+  overflow: hidden;
+  height: 50px;
+  h1 {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+  }
 }
 
 #action {
@@ -147,9 +147,9 @@ button {
   position: fixed;
   bottom: 0;
   padding-bottom: 35px;
-  background: @color-primary-1;
+  background: @color-primary-4;
   width: 100%;
-  border: 1px solid @color-primary-2;
+  //border: 1px solid @color-primary-2;
   border-left: none;
   border-right: none;
   margin: 40px 0 0 0;

@@ -8,7 +8,7 @@ body {
   padding: 0;
   background: #ffffff;
   font-size: 20px;
-  color: #3E3E3E;
+  color: #0a892b;
 }
 @media  only screen and (min-width: 601px) {
   body {
@@ -25,21 +25,9 @@ body {
 }
 @media  only screen and (min-width: 601px) {
   .container {
-    border: 1px solid #BABABA;
     margin-top: 40px;
     border-bottom: none;
   }
-}
-header {
-  overflow: hidden;
-  height: 50px;
-  background: #E8E6E5;
-}
-header h1 {
-  font-size: 20px;
-  text-align: center;
-  padding: 15px 0;
-  margin: 0;
 }
 #canvas {
   position: relative;
@@ -97,7 +85,7 @@ button {
   padding: 10px 0;
   margin: 0;
   background: transparent;
-  color: #6E6E6E;
+  color: #ffffff;
   font-size: 15px;
   width: 25%;
   max-width: 80px;
@@ -112,14 +100,24 @@ button i.fa {
   display: block;
   font-style: normal;
 }
+header {
+  overflow: hidden;
+  height: 50px;
+}
+header h1 {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+}
 #action {
   overflow: hidden;
   position: fixed;
   bottom: 0;
   padding-bottom: 35px;
-  background: #E8E6E5;
+  background: #0a892b;
   width: 100%;
-  border: 1px solid #BABABA;
   border-left: none;
   border-right: none;
   margin: 40px 0 0 0;
